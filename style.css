@@ -1,0 +1,126 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #0c0c0c, #1a1a1a);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+/* Main container */
+.app-container {
+  max-width: 650px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.15);
+  backdrop-filter: blur(12px);
+}
+
+/* Heading */
+.title {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  color: #00d4ff;
+}
+
+/* Subtitle */
+.subtext {
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* Input box */
+textarea {
+  width: 100%;
+  height: 130px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+textarea:focus {
+  border-color: #00eaff;
+  box-shadow: 0 0 10px #00eaff50;
+}
+
+/* Button */
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  background: #00d4ff;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: #009dff;
+}
+
+/* Loader animation */
+.loader {
+  margin: 20px auto;
+  border: 6px solid #333;
+  border-top: 6px solid #00eaff;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Output box */
+.output-box {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 18px;
+  border-radius: 14px;
+  border-left: 4px solid #00eaff;
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  animation: fadeIn 0.4s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
